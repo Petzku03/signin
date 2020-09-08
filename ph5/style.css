@@ -1,0 +1,11 @@
+#btnTarkista, #btnTyhjennä{
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#rekisterinumero{
+    width: 320px;
+    height: 40px;
+}
