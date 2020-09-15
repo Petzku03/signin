@@ -3,32 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In</title>
+    <title>Sign in</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
-<body>
-    <form action="action_page.php" style="border:1px solid #ccc">
-        <div class="container">
-    <h1>Sign Up</h1>
-
-    <hr>
-    
-    <label for="käyttäjänimi"><b>Käyttäjänimi</b></label> <br>
-    <input type="text" placeholder="Anna käyttäjänimesi" name="käyttäjänimi" required>
-    <br>
-    
-    <label for="salasana"><b>Salasana</b></label> <br>
-    <input type="password" placeholder="Anna salasana" name="salasana" required>
-    <br>
-    
-        <label>
-            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Muista minut   
-        </label>
-    
-        <div class="clearfix">
-            <button type="submit" class="signupbtn">Sign Up</button>
+    <body class="text-center">
+        <form>
+         <h1 class="h3 mb-3 foont-weight-normal">Kirjaudu sisään</h1>
+         <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+         <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+         <div class="checkbox mb-3">
+             <label>
+                <input type="checkbox" value="remember-me"> Muista minut
+          </label>
         </div>
-        </div>
+        <button class="btn btn-primary btn-block" id="lahetaTiedot">Kirjaudu sisään</button>
+        <p id="emailTulos" style="color: black;"></p>
+        <p id="passwordTulos" style="color: black;"></p>
     </form>
-</body>
+ </body>
+ <script src="app.js"></script>
 </html>
